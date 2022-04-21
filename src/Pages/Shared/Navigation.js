@@ -5,34 +5,49 @@ import "./Navigation.css";
 
 const Navigation = () => {
   return (
-    <div class="container">
-      <Navbar collapseOnSelect className="p-3" expand="lg">
-        <Link class="navbar-brand me-auto name color-gray" to="/home">
-          Asadullah <span class="title-color">Ahmed</span>
+    <div className="container sticky-top bg-light">
+      <Navbar collapseOnSelect className="p-3 rounded" expand="lg">
+        <Link className="navbar-brand me-auto name color-gray" to="/home">
+          Ahanaf <span className="title-color">Istiak</span>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
-          <Link class="nav-link link nav-item2" aria-current="page" to="/home">
+          <Link
+            className="nav-link link nav-item2"
+            aria-current="page"
+            to="/home"
+          >
             Home
           </Link>
           <Link
-            class="nav-link link nav-item2"
+            className="nav-link link nav-item2"
             aria-current="page"
             to="/resume"
           >
             Resume
           </Link>
           <Link
-            class="nav-link link nav-item2"
+            className="nav-link link nav-item2"
+            aria-current="page"
+            to="/project"
+          >
+            Project
+          </Link>
+          <Link
+            className="nav-link link nav-item2"
             aria-current="page"
             to="/contact"
           >
             Contact
           </Link>
-          <Link class="nav-link link nav-item2" aria-current="page" to="/blog">
+          <Link
+            className="nav-link link nav-item2"
+            aria-current="page"
+            to="/blog"
+          >
             Blog
           </Link>
         </Navbar.Collapse>

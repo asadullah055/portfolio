@@ -25,6 +25,7 @@
   overflow: hidden;
   font-weight: 400;
   margin-top: 10px;
+  text-align: center;
 }
 .link:hover {
   color: #424242;
